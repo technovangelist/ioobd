@@ -40,7 +40,6 @@ sudo apt update
 	&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
 	&& sudo apt update \
 	&& sudo apt install gh -y
-wget -o image1 https://cdn.britannica.com/47/188747-050-1D34E743/Bill-Gates-2011.jpg
 
 sudo apt install golang-go -y
 gh auth login
