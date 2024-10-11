@@ -42,11 +42,14 @@ sudo apt install golang-go -y
 	&& sudo apt update \
 	&& sudo apt install gh -y
 
+wget -o image1 https://cdn.britannica.com/47/188747-050-1D34E743/Bill-Gates-2011.jpg
+
 gh auth login
 
 git clone https://github.com/ollama/ollama.git
 
 cd ollama
+gh pr checkout 6963
 
 make -C llama -j 5
 
